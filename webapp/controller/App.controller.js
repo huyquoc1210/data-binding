@@ -30,6 +30,7 @@ sap.ui.define(
 
       onItemSelected(oEvent) {
         const oSelectedItem = oEvent.getSource();
+        console.log("oSelectedItem", oSelectedItem);
         const oContext = oSelectedItem.getBindingContext("products");
         console.log(oContext);
         const sPath = oContext.getPath();
